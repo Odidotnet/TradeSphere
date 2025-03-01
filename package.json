@@ -1,0 +1,13 @@
+{
+  "name": "code-gigs",
+  "version": "1.0.0",
+  "description": "Login and Dashboard Integration",
+  "scripts": {
+    "start": "concurrently \"cd logauth && npm start\" \"cd dashboard && npm start\"",
+    "install-deps": "concurrently \"cd logauth && npm install\" \"cd dashboard && npm install\" && npm install"
+  },
+  "dependencies": {
+    "concurrently": "^8.2.0",
+    "bootstrap": "^5.3.3"
+  }
+}
